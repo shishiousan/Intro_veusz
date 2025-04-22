@@ -1,0 +1,41 @@
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  text-transform: none;
+  font-family: 'Noto Sans CJK JP', 'Noto Sans JP', sans-serif;
+}
+
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+.title {
+  font-size: 2em !important;
+}
+
+.quarto-title-author-name {
+  font-size: 40px;
+}
+
+.date {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Noto Sans CJK JP', 'Noto Sans JP', sans-serif;
+}
+
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.border-thick {
+  border-width: 3px;
+}

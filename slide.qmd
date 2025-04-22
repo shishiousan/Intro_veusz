@@ -1,0 +1,123 @@
+---
+title: "Introduction of Veusz for Scientific Plotting"
+author: "Shion Shimizu"
+date: "2025/04/22"
+date-format: "[施設機能分野セミナー] YYYY-MM-DD"
+institute: "博士2年"
+format:
+  revealjs: 
+    theme: beige
+    incremental: true
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: style.css
+    #logo: /figures/light.svg
+---
+
+## Motivation
+
+- 研究上，グラフ作成・文献整理・文書作成等々  
+  は必要不可欠
+- 世の中には，これらを補助する  
+  様々なツールが存在(無料・有料問わず)
+- こだわりがある人以外，これらを見つけ出し，  
+  0からマスターするというのは至難の業
+- 周囲とツールを共通にすることで，  
+  最低限使いこなすまでにかかる時間を削減し，  
+  それぞれが得たノウハウの共有も可能に
+- **共通ツールを増やして効率的な研究活動につながれば**
+
+## Various Plotting Libraries
+
+- Excel
+- [Gnuplot](http://www.gnuplot.info/)
+- [GNU Octave](https://octave.org/)
+- [Scilab](https://www.scilab.org/)
+- [matplotlib](https://matplotlib.org/)
+- [MATLAB Graphics](https://www.mathworks.com/help/matlab/graphics.html)
+- [Veusz](https://veusz.github.io/)
+- 他にも多種多様
+
+## Script Based Plotting 
+:::: {.columns}
+
+::: {.column width="65%"}
+Gnuplotを例に，
+
+```{gnuplot} 
+set title "Simple Sine Wave"
+set xlabel "X Axis"
+set ylabel "Y Axis"
+set grid
+
+plot sin(x) title "sin(x)" with lines linewidth 2
+```
+:::
+
+::: {.column width="35%"}
+![](./figures/sine_wave.png)
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="65%"}
+ちょっと凝ると．．．
+
+論文でも使える綺麗なグラフは  
+十分作れる
+::: 
+ 
+::: {.column width="35%"}
+![](./figures/2d_dispersion_contour.svg){width=120%}
+:::
+
+::::
+
+## Veusz: GUI based tool
+
+[Veusz](https://veusz.github.io/)
+
+> Veusz is a scientific plotting and graphing program with a graphical user interface, designed to produce publication-ready 2D and 3D plots.
+
+主な特徴
+
+- 使いやすいGUIベース
+- 基本的な機能が充実
+- 微調整も結構可能（かゆいところに手が届く）
+- 様々なファイル形式で出力可能
+
+## My Gallery made by Veusz
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./figures/stress_variation.svg){width=90%}
+:::
+
+::: {.column width="50%"}
+![](./figures/temporal_contour.png)
+![](./figures/vari_iteration.svg){width=40%}
+![](./figures/comparison_RFE_NDR.svg){width=50%}
+:::
+
+::::
+
+## Today's Objectives
+
+::: {.nonincremental}
+- [ ] Veuszの[インストール](https://veusz.github.io/download/)
+- [ ] データのインポート
+- [ ] 基本的なグラフ作成
+- [ ] グラフの調整
+- [ ] グラフのエクスポート
+- [ ] ScientificなグラフにするためのTips
+:::
+
+## Let's Practice
+
+ここからは実際にVeuszを使って解説します
+
+![](./figures/lter_penguins.png)
